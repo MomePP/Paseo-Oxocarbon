@@ -5,6 +5,7 @@
 **The [Oxocarbon](https://github.com/nyoom-engineering/oxocarbon.nvim) palette as a Paseo theme.**
 
 ![#161616](https://img.shields.io/badge/-161616-161616?style=flat-square)
+![#262626](https://img.shields.io/badge/-262626-262626?style=flat-square)
 ![#393939](https://img.shields.io/badge/-393939-393939?style=flat-square)
 ![#525252](https://img.shields.io/badge/-525252-525252?style=flat-square)
 ![#8d8d8d](https://img.shields.io/badge/-8d8d8d-8d8d8d?style=flat-square)
@@ -44,7 +45,7 @@ Then pick **Oxocarbon** in **Settings > Appearance**.
 | --- | --- |
 | background | `#161616` |
 | raised | `#161616` |
-| control | `#393939` |
+| control | `#262626` |
 | border | `#393939` |
 | ring | `#525252` |
 | mutedForeground | `#8d8d8d` |
@@ -52,6 +53,8 @@ Then pick **Oxocarbon** in **Settings > Appearance**.
 | accent | `#c693ff` |
 
 `raised` is set to the background on purpose. Paseo paints it under the whole content pane, and any lift there makes the entire window look brighter. For card separation, set it to `#1b1b1b` (subtle) or `#262626` (clear) in [`index.client.tsx`](index.client.tsx).
+
+`control` is Carbon's base01, one step above the background. Paseo paints popovers, menus, tooltips, the selected sidebar row, the active tab and inputs from it, so a brighter step reads as a slab on the dark pane. Borders stay at base02 and keep inputs outlined.
 
 ## Terminal colours
 
