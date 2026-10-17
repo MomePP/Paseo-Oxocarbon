@@ -37,6 +37,12 @@
 // on; borders and surface2 have to carry that instead. Set this to #1b1b1b for
 // the palette-faithful step back, or #262626 for real card separation.
 //
+// `control` (surface2) is Carbon's base01, #262626, one layer above base00.
+// Paseo paints popovers, menus, tooltips, the selected sidebar row, the active
+// tab, inputs and pressed states from it, so at base02 (#393939) every one of
+// them read as a bright slab on the #161616 pane. Borders stay at base02 and
+// keep inputs outlined.
+//
 // The terminal's 16 ANSI colours are NOT part of this. `addTheme` covers app
 // chrome only; the matching ANSI set is applied by the companion
 // paseo-vibrancy plugin (github.com/MomePP/paseo-vibrancy), since a terminal
@@ -58,7 +64,7 @@ export default function contribute(client: PluginClientContext) {
       background: "#161616",
       foreground: "#f2f4f8",
       raised: "#161616",
-      control: "#393939",
+      control: "#262626",
       border: "#393939",
       accent: "#c693ff",
       mutedForeground: "#8d8d8d",
